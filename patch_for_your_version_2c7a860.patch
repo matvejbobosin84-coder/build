@@ -1,0 +1,822 @@
+diff --git a/skeleton/SYSTEM/res/lang.txt b/skeleton/SYSTEM/res/lang.txt
+new file mode 100644
+index 0000000..76f38c0
+--- /dev/null
++++ b/skeleton/SYSTEM/res/lang.txt
+@@ -0,0 +1,276 @@
++# Русский словарь для MyMinUI.
++# Формат строки:  English text => Русский текст
++# Строки с # в начале - комментарии. Если перевода нет, показывается английский текст.
++# Надписи из нескольких строк переводятся построчно.
++#
++# Режим журнала: пока ниже стоит строка #log, все надписи без перевода
++# записываются в файл  .userdata/shared/untranslated.txt  на SD-карте.
++# Пришлите этот файл, и я дополню словарь. Когда словарь готов, удалите строку #log.
++#log
++
++##### Главное меню #####
++Main Menu => Главное меню
++Recently Played => Недавние
++Favorites => Избранное
++Tools => Инструменты
++Empty folder => Пустая папка
++Recently Played? => Недавние игры?
++Are you sure you want to clear => Точно очистить список
++Model => Модель
++Release => Версия
++Commit => Коммит
++Mode => Режим
++IP Addr => IP-адрес
++Standard => Стандартный
++Simple (no Setting) => Простой (без настроек)
++Fancy (Boxart + State) => Расширенный (обложки)
++Disc 1 => Диск 1
++Disc 2 => Диск 2
++Disc 3 => Диск 3
++Disc 4 => Диск 4
++Disc 5 => Диск 5
++Disc 6 => Диск 6
++
++##### Подсказки кнопок #####
++OPEN => ОТКРЫТЬ
++INFO => ИНФО
++BACK => НАЗАД
++RUN => ЗАПУСК
++RUN2 => ЗАПУСК
++RSM => ПРОДОЛЖ.
++HIDE => СКРЫТЬ
++FAV => ИЗБР.
++MODE => РЕЖИМ
++SLP => СОН
++OFF => ВЫКЛ
++BOXART => ОБЛОЖКА
++OKAY => ОК
++CANCEL => ОТМЕНА
++CLEAR => ОЧИСТИТЬ
++SET => ЗАДАТЬ
++QUIT => ВЫХОД
++12 HOUR => 12 ЧАСОВ
++24 HOUR => 24 ЧАСА
++
++##### Выключение #####
++Quicksave created, => Быстрое сохранение создано,
++powering off => выключение
++power off now => можно выключать
++Powering off => Выключение
++Power off now => Можно выключать
++
++##### Меню паузы в игре #####
++Continue => Продолжить
++Save => Сохранить
++Load => Загрузить
++Options => Настройки
++Make Boxart => Сделать обложку
++Quit => Выйти
++Reset => Сброс
++No Preview => Нет превью
++Empty Slot => Пустой слот
++
++##### Раздел настроек #####
++Frontend => Интерфейс
++Emulator => Эмулятор
++Cheats => Читы
++Controls => Управление
++Shortcuts => Горячие клавиши
++Save Changes => Сохранить изменения
++Save for console => Сохранить для консоли
++Save for game => Сохранить для игры
++Restore defaults => Сбросить настройки
++Using defaults. => Стандартные настройки.
++Using console config. => Настройки консоли.
++Using game config. => Настройки игры.
++Saved for console. => Сохранено для консоли.
++Saved for game. => Сохранено для игры.
++Restored console defaults. => Настройки консоли сброшены.
++Restored defaults. => Настройки сброшены.
++This core has no options. => У этого ядра нет настроек.
++No cheat file loaded. => Файл читов не загружен.
++
++##### Настройки эмулятора #####
++Screen Scaling => Масштаб экрана
++Screen Effect => Эффект экрана
++Screen Scaler => Метод масштаба
++Max Upscale => Макс. увеличение
++Prevent Tearing => Без разрывов кадра
++Core Sync => Синхронизация ядра
++CPU Speed => Скорость CPU
++Thread Core => Ядро в потоке
++Debug HUD => Отладочная панель
++Max FF Speed => Макс. ускорение
++Play as Player => Играть за игрока
++Select the maximum upscale factor. => Выбор максимального увеличения.
++Native uses integer scaling. => Родной: целочисленный масштаб.
++Aspect uses core reported aspect ratio. => Пропорции: как сообщает ядро.
++Extended is like aspect but the it extends the image to fit 3/4 of screen. => Расширенный: как пропорции, но занимает 3/4 экрана.
++Fullscreen has non-squarepixels. => Во весь экран: пиксели не квадратные.
++Force 4:3 and 3:2 guess what? => Принудительно 4:3 или 3:2.
++Grid simulates an LCD grid. => Сетка имитирует сетку LCD.
++Line simulates CRT scanlines. => Линии имитируют развёртку ЭЛТ.
++Effects usually look best at native scaling. => Эффекты лучше смотрятся в родном масштабе.
++Sharp uses bilinear sharp sampling => Резкий: билинейная выборка
++Near uses nearest neighbor sampling (forced when scaling=native). => Ближний: выборка по ближайшему (при родном масштабе).
++Wait for vsync before drawing the next frame. => Ждать вертикальную синхронизацию перед кадром.
++Lenient only waits when within frame budget. => Мягкий: ждёт, только если успевает.
++Strict always waits. => Строгий: ждёт всегда.
++Over- or underclock the CPU to prioritize => Разгон или снижение частоты CPU:
++pure performance or power savings. => скорость или экономия заряда.
++Move emulation to a thread. => Эмуляция в отдельном потоке.
++Prevents audio crackle but may => Убирает треск звука, но может
++cause dropped frames. => пропускать кадры.
++Show frames per second, cpu load, => Показать FPS, нагрузку CPU,
++resolution, and scaler information. => разрешение и данные о масштабе.
++Fast forward will not exceed the => Ускорение не превысит
++selected speed (but may be less => выбранную скорость (может быть
++depending on game and emulator). => ниже, зависит от игры и эмулятора).
++Set the current player controller => Выбор игрока, чей геймпад
++can be changed during the game => можно менять во время игры,
++depending on game and emulator. => зависит от игры и эмулятора.
++
++##### Значения #####
++Off => Выкл
++On => Вкл
++OFF => ВЫКЛ
++ON => ВКЛ
++None => Нет
++NONE => НЕТ
++disabled => выключено
++enabled => включено
++Disabled => Выключено
++Enabled => Включено
++Auto => Авто
++Native => Родной
++Aspect => Пропорции
++Extended => Расширенный
++Fullscreen => Во весь экран
++Force 4:3 => Принуд. 4:3
++Force 3:2 => Принуд. 3:2
++Line => Линии
++Grid => Сетка
++Near => Ближний
++Sharp => Резкий
++Lenient => Мягкий
++Strict => Строгий
++Powersave => Экономия
++Normal => Обычный
++Performance => Скорость
++Max => Макс
++Standard => Стандартный
++Controller => Контроллер
++Select the type of controller. => Выбор типа контроллера.
++
++##### Управление и горячие клавиши #####
++Press A to set and X to clear. => A - назначить, X - очистить.
++Supports single button and MENU+button. => Одна кнопка или MENU+кнопка.
++MapABXYtoRightStick => ABXY на правый стик
++MapLeftSticktoDPad => Левый стик на крестовину
++Map ABXY buttons to right stick. => Кнопки ABXY работают как правый стик.
++Map left stick to DPad buttons. => Левый стик работает как крестовина.
++Up => Вверх
++Down => Вниз
++Left => Влево
++Right => Вправо
++Select => Select
++Start => Start
++A Button => Кнопка A
++B Button => Кнопка B
++X Button => Кнопка X
++Y Button => Кнопка Y
++L1 Button => Кнопка L1
++R1 Button => Кнопка R1
++L2 Button => Кнопка L2
++R2 Button => Кнопка R2
++L3 Button => Кнопка L3
++R3 Button => Кнопка R3
++A Turbo => Турбо A
++B Turbo => Турбо B
++X Turbo => Турбо X
++Y Turbo => Турбо Y
++Prev. Palette => Пред. палитра
++Next Palette => След. палитра
++UP => ВВЕРХ
++DOWN => ВНИЗ
++LEFT => ВЛЕВО
++RIGHT => ВПРАВО
++MENU+UP => MENU+ВВЕРХ
++MENU+DOWN => MENU+ВНИЗ
++MENU+LEFT => MENU+ВЛЕВО
++MENU+RIGHT => MENU+ВПРАВО
++Save State => Сохранить
++Load State => Загрузить
++Reset Game => Сбросить игру
++Save & Quit => Сохранить и выйти
++Cycle Scaling => Смена масштаба
++Cycle Effect => Смена эффекта
++Toggle FF => Ускорение (вкл/выкл)
++Hold FF => Ускорение (удержание)
++
++##### Параметры ядра Game Boy (Gambatte) #####
++GB Colorization => Раскраска GB
++Internal Palette => Встроенная палитра
++Color Correction => Коррекция цвета
++Color Correction Mode => Режим коррекции цвета
++Color Correction - Frontlight Position => Коррекция цвета: положение подсветки
++Dark Filter Level (%) => Уровень затемнения (%)
++Interframe Blending => Смешивание кадров
++Emulated Hardware (Restart Required) => Модель консоли (нужен перезапуск)
++Use Official Bootloader (Restart Required) => Официальный загрузчик (нужен перезапуск)
++Allow Opposing Directions => Разрешить противоположные направления
++Turbo Button Period => Период турбо-кнопки
++Controller Rumble Strength => Сила вибрации
++GBC Only => Только GBC
++Accurate => Точная
++Central => По центру
++Enables haptic feedback effects for supported games (Pokemon Pinball, Perfect Dark...). => Вибрация в поддерживаемых играх (Pokemon Pinball, Perfect Dark...).
++
++##### Дополнение по журналу (описания Game Boy, инструменты) #####
++Enables colorization of Game Boy games. 'Auto' selects the 'best' (most colorful/appropriate) palette. 'GBC' selects game-specific Game Boy Color palette if defined, otherwise 'GBC - Dark Green'. 'SGB' selects game-specific Super Game Boy palette if defined, otherwise 'SGB - 1A'. 'Internal' uses 'Internal Palette' core option. 'Custom' loads user-created palette from system directory. => Раскраска игр Game Boy. Auto выбирает лучшую палитру, GBC и SGB - палитру игры, Internal - встроенную, Custom - вашу из системной папки.
++Selects palette used for colorizing Game Boy games when 'GB Colorization' is set to 'Internal', or when 'GB Colorization' is set to 'Auto' and game has no pre-defined SGB/GBC palette. 'GB' palettes mimic the display of original Game Boy hardware. 'GBC' palettes are identical to the built-in presets of the Game Boy Color. 'SGB' palettes are identical to the built-in presets of the Super Game Boy. => Палитра для раскраски, если выбрано Internal или Auto и у игры нет своей палитры. GB - как у оригинальной консоли, GBC и SGB - как у Game Boy Color и Super Game Boy.
++Selects internal colorization palette when 'Internal Palette' is set to 'TWB64 - Pack 1'. => Выбор палитры из набора TWB64, набор 1.
++Selects internal colorization palette when 'Internal Palette' is set to 'TWB64 - Pack 2'. => Выбор палитры из набора TWB64, набор 2.
++Selects internal colorization palette when 'Internal Palette' is set to 'TWB64 - Pack 3'. => Выбор палитры из набора TWB64, набор 3.
++Selects internal colorization palette when 'Internal Palette' is set to 'PixelShift - Pack 1'. => Выбор палитры из набора PixelShift, набор 1.
++Adjusts output colors to match the display of real Game Boy Color hardware. 'GBC Only' ensures that correction will only be applied when playing Game Boy Color games, or when using a Game Boy Color palette to colorize a Game Boy game. 'Always' applies color correction to all content, and will produce unexpected/suboptimal results when using 'GB' or 'SGB' internal color palettes. => Подгоняет цвета под экран настоящей Game Boy Color. GBC Only - только для игр GBC, Always - для всех игр (с палитрами GB и SGB цвета могут выглядеть странно).
++Specifies method used when performing color correction. 'Accurate' produces output almost indistinguishable from a real Game Boy Color LCD panel. 'Fast' merely darkens colors and reduces saturation, and may be used on low-end hardware if the 'Accurate' method is too slow. => Метод коррекции цвета. Accurate - почти как у настоящего экрана GBC, Fast - просто темнее и менее насыщенно, для слабых устройств.
++Simulates the physical response of the Game Boy Color LCD panel when illuminated from different angles. 'Central' represents standard color reproduction. 'Above Screen' increases brightness. 'Below Screen' reduces brightness. This setting only applies when 'Color Correction Mode' is set to 'Accurate'. => Имитация отклика экрана GBC при разном освещении. Central - обычные цвета, Above Screen - ярче, Below Screen - темнее. Только для режима Accurate.
++Enable luminosity-based brightness reduction. May be used to avoid glare/eye strain when playing games with white backgrounds, which are intended for display on a non-backlit Game Boy Color and can therefore appear uncomfortably bright when viewed on a modern backlit screen. => Снижает яркость, чтобы не слепило в играх с белым фоном (они рассчитаны на экран без подсветки).
++Simulates LCD ghosting effects. 'Simple' performs a 50:50 mix of the current and previous frames. 'LCD Ghosting' mimics natural LCD response times by combining multiple buffered frames. 'Simple' blending is required when playing games that rely on LCD ghosting for transparency effects (Wave Race, Ballistic, Chikyuu Kaihou Gun ZAS...). => Имитация инерции LCD. Simple смешивает текущий и прошлый кадр, LCD Ghosting - естественная инерция по нескольким кадрам. Simple нужен играм, где прозрачность сделана через инерцию (Wave Race, Ballistic).
++Specify which algorithm to use when resampling generated audio (the Game Boy audio rate is limited only by its CPU write speed, such that 'native' frequencies are impractical on modern sound devices and must be downsampled). 'Sinc' produces the highest quality. 'Cosine' improves performance on low-end hardware. => Алгоритм преобразования звука. Sinc - лучшее качество, Cosine - быстрее на слабых устройствах.
++Specify which type of hardware to emulate. 'Auto' is recommended. Selecting 'GBA' unlocks extra features in certain 'GBA Enhanced' Game Boy Color games (Shantae, Wendy - Every Witch Way, Legend of Zelda: Oracle of Seasons/Ages...). => Какую модель консоли эмулировать. Рекомендуется Auto. GBA включает доп. возможности в некоторых играх GBC (Shantae, Wendy - Every Witch Way, Zelda: Oracle of Seasons/Ages...).
++Enable support for official Game Boy and Game Boy Color bootloaders, with corresponding start-up logo animations. => Официальные загрузчики Game Boy и Game Boy Color с анимацией логотипа при запуске.
++Enabling this will allow pressing/quickly alternating/holding both left and right (or up and down) directions at the same time. This may cause movement-based glitches. => Разрешает нажимать влево и вправо (или вверх и вниз) одновременно. Может вызывать глюки в движении.
++Specify the repeat interval (in frames) when holding down the Turbo A/B buttons. => Интервал повтора (в кадрах) при удержании турбо-кнопок A/B.
++Choose what should be used as a => Что использовать как
++reference for the frame rate. => эталон частоты кадров.
++"Native" uses the emulator frame rate, => «Native» - частота кадров эмулятора,
++"Screen" uses the frame rate of the screen. => «Screen» - частота кадров экрана.
++NoFix => Без коррекции
++Core => Ядро
++Screen => Экран
++Simple => Простое
++LCD Ghosting => Эффект LCD
++LCD Ghosting (Accurate) => Эффект LCD (точный)
++LCD Ghosting (Fast) => Эффект LCD (быстрый)
++Always => Всегда
++Fast => Быстрая
++Above Screen => Выше экрана
++Below Screen => Ниже экрана
++Internal => Встроенная
++Custom => Своя
++> TWB64 - Pack 1 Palette => > Палитры TWB64, набор 1
++> TWB64 - Pack 2 Palette => > Палитры TWB64, набор 2
++> TWB64 - Pack 3 Palette => > Палитры TWB64, набор 3
++> PixelShift - Pack 1 Palette => > Палитры PixelShift, набор 1
++Arcade => Аркады
++Clear Recently Played => Очистить недавние
++Clock => Часы
++Convert BoxArt => Конвертер обложек
++Files => Файлы
++Input => Проверка кнопок
++ToggleSleepMode => Кнопка питания: сон или выкл.
++ToggleSeekPageTriggers => Листание страниц: стрелки или L2/R2
++ToggleHideState => Скрыть превью сохранения
++ToggleHideBOXARTifState => Скрыть обложку при сохранении
+diff --git a/workspace/all/common/api.c b/workspace/all/common/api.c
+index d0b0bfd..8f40587 100644
+--- a/workspace/all/common/api.c
++++ b/workspace/all/common/api.c
+@@ -17,6 +17,7 @@
+ #include "defines.h"
+ #include "api.h"
+ #include "utils.h"
++#include "i18n_impl.h"
+ 
+ ///////////////////////////////
+ 
+@@ -513,13 +514,22 @@ void GFX_delay(void) {
+ 
+ int GFX_truncateText(TTF_Font* font, const char* in_name, char* out_name, int max_width, int padding) {
+ 	int text_width;
+-	strcpy(out_name, in_name);
++	strcpy(out_name, I18N_T(in_name));
+ 	TTF_SizeUTF8(font, out_name, &text_width, NULL);
+ 	text_width += padding;
+-	
++
+ 	while (text_width>max_width) {
+ 		int len = strlen(out_name);
+-		strcpy(&out_name[len-4], "...\0");
++		int cut = len - 4;
++		// never cut in the middle of a multi-byte (UTF-8) character
++		while (cut>0 && (out_name[cut] & 0xC0)==0x80) cut--;
++		if (cut<=0) {
++			strcpy(out_name, "...");
++			TTF_SizeUTF8(font, out_name, &text_width, NULL);
++			text_width += padding;
++			break;
++		}
++		strcpy(&out_name[cut], "...");
+ 		TTF_SizeUTF8(font, out_name, &text_width, NULL);
+ 		text_width += padding;
+ 	}
+diff --git a/workspace/all/common/api.h b/workspace/all/common/api.h
+index 9b7bb4b..663c908 100644
+--- a/workspace/all/common/api.h
++++ b/workspace/all/common/api.h
+@@ -3,6 +3,7 @@
+ #include "sdl.h"
+ #include "platform.h"
+ #include "scaler.h"
++#include "i18n.h"
+ 
+ ///////////////////////////////
+ 
+diff --git a/workspace/all/common/i18n.h b/workspace/all/common/i18n.h
+new file mode 100644
+index 0000000..a22ad38
+--- /dev/null
++++ b/workspace/all/common/i18n.h
+@@ -0,0 +1,24 @@
++#ifndef I18N_H
++#define I18N_H
++
++// Runtime translation. Dictionary file: <sdcard>/.system/res/lang.txt
++// Format, one entry per line:   English text => Русский текст
++// Lines starting with # are comments. Missing file or missing entry = original text.
++// If the dictionary contains the line   #log   every text that has no translation is
++// appended to <sdcard>/.userdata/shared/untranslated.txt (one per line, no duplicates).
++
++const char* I18N_T(const char* text);
++
++// Every text measured or drawn through SDL_ttf passes through the dictionary.
++// A function-like macro is not re-expanded inside its own expansion, so the
++// inner name below is the real SDL_ttf function.
++#ifdef TTF_RenderUTF8_Blended
++#undef TTF_RenderUTF8_Blended
++#endif
++#ifdef TTF_SizeUTF8
++#undef TTF_SizeUTF8
++#endif
++#define TTF_RenderUTF8_Blended(font, text, color) TTF_RenderUTF8_Blended((font), I18N_T(text), (color))
++#define TTF_SizeUTF8(font, text, w, h) TTF_SizeUTF8((font), I18N_T(text), (w), (h))
++
++#endif
+diff --git a/workspace/all/common/i18n_impl.h b/workspace/all/common/i18n_impl.h
+new file mode 100644
+index 0000000..04b23d3
+--- /dev/null
++++ b/workspace/all/common/i18n_impl.h
+@@ -0,0 +1,154 @@
++// Implementation of the runtime dictionary (included once, from api.c).
++// Kept separate from api.c so it can be unit-tested on a PC.
++
++#include <stdio.h>
++#include <stdlib.h>
++#include <string.h>
++
++#ifndef I18N_DICT_PATH
++#define I18N_DICT_PATH RES_PATH "/lang.txt"
++#endif
++#ifndef I18N_LOG_PATH
++#define I18N_LOG_PATH SHARED_USERDATA_PATH "/untranslated.txt"
++#endif
++
++typedef struct {
++	char* key;
++	char* val;
++} I18N_Entry;
++
++static struct {
++	int loaded;
++	int logging;
++	char* data;          // whole file, modified in place
++	I18N_Entry* table;   // open addressing, size is a power of two
++	unsigned size;
++	unsigned count;
++	// misses already logged this session (to avoid duplicates)
++	char** seen;
++	unsigned seen_count;
++	unsigned seen_cap;
++} i18n;
++
++static unsigned I18N_hash(const char* s) {
++	unsigned h = 2166136261u;
++	while (*s) {
++		h ^= (unsigned char)*s++;
++		h *= 16777619u;
++	}
++	return h;
++}
++
++static void I18N_insert(char* key, char* val) {
++	unsigned i = I18N_hash(key) & (i18n.size - 1);
++	while (i18n.table[i].key) {
++		if (!strcmp(i18n.table[i].key, key)) { // later entry wins
++			i18n.table[i].val = val;
++			return;
++		}
++		i = (i + 1) & (i18n.size - 1);
++	}
++	i18n.table[i].key = key;
++	i18n.table[i].val = val;
++	i18n.count++;
++}
++
++static char* I18N_trim(char* s) {
++	while (*s==' ' || *s=='\t') s++;
++	char* e = s + strlen(s);
++	while (e>s && (e[-1]==' ' || e[-1]=='\t')) *--e = '\0';
++	return s;
++}
++
++static void I18N_load(void) {
++	i18n.loaded = 1;
++	FILE* f = fopen(I18N_DICT_PATH, "rb");
++	if (!f) return;
++	fseek(f, 0, SEEK_END);
++	long len = ftell(f);
++	fseek(f, 0, SEEK_SET);
++	if (len<=0 || len>(4L*1024*1024)) { fclose(f); return; }
++	i18n.data = malloc(len + 1);
++	if (!i18n.data) { fclose(f); return; }
++	size_t got = fread(i18n.data, 1, len, f);
++	fclose(f);
++	i18n.data[got] = '\0';
++
++	char* p = i18n.data;
++	if ((unsigned char)p[0]==0xEF && (unsigned char)p[1]==0xBB && (unsigned char)p[2]==0xBF) p += 3; // BOM
++
++	// count lines to size the table
++	unsigned lines = 1;
++	for (char* c = p; *c; c++) if (*c=='\n') lines++;
++	unsigned size = 64;
++	while (size < lines * 2) size <<= 1;
++	i18n.table = calloc(size, sizeof(I18N_Entry));
++	if (!i18n.table) { free(i18n.data); i18n.data = NULL; return; }
++	i18n.size = size;
++
++	while (*p) {
++		char* eol = strchr(p, '\n');
++		if (eol) *eol = '\0';
++		char* next = eol ? eol + 1 : p + strlen(p);
++
++		size_t l = strlen(p);
++		if (l && p[l-1]=='\r') p[l-1] = '\0';
++
++		if (p[0]=='#') {
++			if (!strcmp(I18N_trim(p), "#log")) i18n.logging = 1;
++		}
++		else if (p[0]) {
++			char* sep = strstr(p, " => ");
++			if (sep) {
++				*sep = '\0';
++				char* key = I18N_trim(p);
++				char* val = I18N_trim(sep + 4);
++				if (key[0] && val[0]) I18N_insert(key, val);
++			}
++		}
++		p = next;
++	}
++}
++
++static void I18N_logMiss(const char* text) {
++	for (unsigned i=0; i<i18n.seen_count; i++) {
++		if (!strcmp(i18n.seen[i], text)) return;
++	}
++	if (i18n.seen_count==i18n.seen_cap) {
++		unsigned cap = i18n.seen_cap ? i18n.seen_cap * 2 : 128;
++		char** grown = realloc(i18n.seen, cap * sizeof(char*));
++		if (!grown) return;
++		i18n.seen = grown;
++		i18n.seen_cap = cap;
++	}
++	char* copy = strdup(text);
++	if (!copy) return;
++	i18n.seen[i18n.seen_count++] = copy;
++
++	FILE* f = fopen(I18N_LOG_PATH, "ab");
++	if (!f) return;
++	fprintf(f, "%s\n", text);
++	fclose(f);
++}
++
++static int I18N_hasLetters(const char* s) {
++	for (; *s; s++) {
++		unsigned char c = (unsigned char)*s;
++		if ((c>='A' && c<='Z') || (c>='a' && c<='z')) return 1;
++	}
++	return 0;
++}
++
++const char* I18N_T(const char* text) {
++	if (!text || !text[0]) return text;
++	if (!i18n.loaded) I18N_load();
++	if (!i18n.table) return text;
++
++	unsigned i = I18N_hash(text) & (i18n.size - 1);
++	while (i18n.table[i].key) {
++		if (!strcmp(i18n.table[i].key, text)) return i18n.table[i].val;
++		i = (i + 1) & (i18n.size - 1);
++	}
++	if (i18n.logging && I18N_hasLetters(text)) I18N_logMiss(text);
++	return text;
++}
+diff --git a/workspace/all/minarch/minarch.c b/workspace/all/minarch/minarch.c
+index 997b0af..a466f2e 100644
+--- a/workspace/all/minarch/minarch.c
++++ b/workspace/all/minarch/minarch.c
+@@ -1836,9 +1836,10 @@ static void OptionList_init(const struct retro_core_option_definition *defs) {
+ 			strcpy(item->name, def->desc);
+ 			
+ 			if (def->info) {
+-				len = strlen(def->info) + 1;
++				const char* info_tr = I18N_T(def->info); // translated before wrapping, so lines wrap correctly
++				len = strlen(info_tr) + 1;
+ 				item->desc = calloc(len, sizeof(char));
+-				strncpy(item->desc, def->info, len);
++				strncpy(item->desc, info_tr, len);
+ 
+ 				item->full = calloc(len, sizeof(char));
+ 				strncpy(item->full, item->desc, len);
+@@ -4850,9 +4851,10 @@ static int OptionCheats_openMenu(MenuList* list, int i) {
+ 			strcpy(item->name, cheat->name);
+ 
+ 			if(cheat->info) {
+-				len = strlen(cheat->info) + 1;
++				const char* info_tr = I18N_T(cheat->info);
++				len = strlen(info_tr) + 1;
+ 				item->desc = calloc(len, sizeof(char));
+-				strncpy(item->desc, cheat->info, len);
++				strncpy(item->desc, info_tr, len);
+ 				GFX_wrapText(font.tiny, item->desc, DEVICE_WIDTH - SCALE1(2*PADDING), 2);
+ 			}
+ 
+diff --git a/workspace/all/minui/minui.c b/workspace/all/minui/minui.c
+index 6fcba42..a26b0c0 100644
+--- a/workspace/all/minui/minui.c
++++ b/workspace/all/minui/minui.c
+@@ -1704,6 +1704,196 @@ static void Menu_quit(void) {
+ 
+ ///////////////////////////////////////
+ 
++/////////////////////////////////////////////////////////////////
++// Tile (grid) main menu
++/////////////////////////////////////////////////////////////////
++#define TILE_COLS 3
++#define TILE_ROWS 2
++#define TILE_PER_PAGE (TILE_COLS*TILE_ROWS)
++
++static int Tile_pack(SDL_Surface* dst, int r, int g, int b) { return SDL_MapRGB(dst->format, r, g, b); }
++
++// filled rounded rectangle using only SDL_FillRect (works for any pixel format)
++static void Tile_fillRound(SDL_Surface* dst, int x, int y, int w, int h, int r, Uint32 c) {
++	if (w<=0 || h<=0) return;
++	if (r*2>h) r = h/2;
++	if (r*2>w) r = w/2;
++	for (int dy=0; dy<r; dy++) {
++		// horizontal inset for this row (circle of radius r)
++		int inset = 0;
++		{
++			int yy = 2*(r-dy)-1; // twice the distance from circle centre to row centre
++			int lim = 4*r*r - yy*yy;
++			int k = 0;
++			while ((2*(k+1))*(2*(k+1)) <= lim) k++;
++			inset = r - k;
++		}
++		SDL_FillRect(dst, &(SDL_Rect){x+inset, y+dy, w-inset*2, 1}, c);
++		SDL_FillRect(dst, &(SDL_Rect){x+inset, y+h-1-dy, w-inset*2, 1}, c);
++	}
++	SDL_FillRect(dst, &(SDL_Rect){x, y+r, w, h-r*2}, c);
++}
++
++static const unsigned char tile_palette[][3] = {
++	{0xA3,0xE6,0x35}, // lime
++	{0x7C,0x3A,0xED}, // violet
++	{0x4F,0x46,0xE5}, // indigo
++	{0xDC,0x26,0x26}, // red
++	{0x06,0xB6,0xD4}, // cyan
++	{0xF9,0x73,0x16}, // orange
++	{0xEC,0x48,0x99}, // pink
++	{0x10,0xB9,0x81}, // green
++};
++
++static void Tile_color(Entry* e, int* r, int* g, int* b, int* dark_text) {
++	const unsigned char* c;
++	static const unsigned char recent[3] = {0xFF,0x4D,0x6D};
++	static const unsigned char fav[3] = {0xFF,0xB7,0x03};
++	static const unsigned char tools[3] = {0x38,0xBD,0xF8};
++	if (exactMatch(e->path, FAUX_RECENT_PATH)) c = recent;
++	else if (exactMatch(e->path, FAUX_FAVORITE_PATH)) c = fav;
++	else if (e->type==ENTRY_PAK) c = tools;
++	else {
++		unsigned h = 2166136261u;
++		for (const char* p=e->name; *p; p++) { h ^= (unsigned char)*p; h *= 16777619u; }
++		c = tile_palette[h % (sizeof(tile_palette)/sizeof(tile_palette[0]))];
++	}
++	*r=c[0]; *g=c[1]; *b=c[2];
++	// light colours get dark text
++	*dark_text = (c[0]*299 + c[1]*587 + c[2]*114) > 140000;
++}
++
++static int Tile_charLen(const char* s) {
++	unsigned char c = (unsigned char)*s;
++	if (c<0x80) return 1;
++	if ((c&0xE0)==0xC0) return 2;
++	if ((c&0xF0)==0xE0) return 3;
++	if ((c&0xF8)==0xF0) return 4;
++	return 1;
++}
++
++// short label for the big text in the tile: initials of words, or first letters
++static void Tile_abbrev(const char* name, char* out, int out_size) {
++	out[0] = '\0';
++	int n = 0, words = 0;
++	const char* p = name;
++	int at_start = 1;
++	// count words
++	for (const char* q=name; *q; q++) { if (*q==' ') at_start = 1; else if (at_start) { words++; at_start = 0; } }
++	if (words>=2) {
++		at_start = 1;
++		while (*p && n<3) {
++			int len = Tile_charLen(p);
++			if (*p==' ') at_start = 1;
++			else if (at_start) {
++				if (n+len>=out_size-1) break;
++				if (len==1 && !((*p>='A'&&*p<='Z')||(*p>='a'&&*p<='z')||(*p>='0'&&*p<='9'))) { at_start = 0; p += len; continue; }
++				memcpy(out+n, p, len); n += len; out[n] = '\0';
++				at_start = 0;
++				if (len==1 && *p>='a' && *p<='z') out[n-1] -= 32;
++				// count at most 3 initials
++			}
++			p += len;
++			// stop condition: count initials not bytes
++			int initials = 0;
++			for (const char* t=out; *t; t += Tile_charLen(t)) initials++;
++			if (initials>=3) break;
++		}
++	}
++	if (!out[0]) {
++		int initials = 0;
++		p = name;
++		while (*p && initials<3 && n+Tile_charLen(p)<out_size-1) {
++			int len = Tile_charLen(p);
++			memcpy(out+n, p, len); n += len; out[n] = '\0';
++			if (len==1 && out[n-1]>='a' && out[n-1]<='z') out[n-1] -= 32;
++			p += len; initials++;
++		}
++	}
++}
++
++static TTF_Font* tile_big_font = NULL;
++
++static void Tile_draw(SDL_Surface* screen, Directory* dir, int total) {
++	if (!tile_big_font) {
++		tile_big_font = TTF_OpenFont(FONT_PATH, SCALE1(24));
++		if (!tile_big_font) tile_big_font = font.large;
++	}
++	int W = screen->w, H = screen->h;
++	int s = W/320; if (s<1) s = 1; // pixel unit (same as SCALE1 on 640 wide)
++	int margin = 12*s;
++	int gap = 7*s;
++	int top_y = 40*s;
++	int bottom_reserved = 42*s; // hint row + dots
++	int cell_w = (W - margin*2 - gap*(TILE_COLS-1)) / TILE_COLS;
++	int cell_h = (H - top_y - bottom_reserved - 6*s - gap*(TILE_ROWS-1)) / TILE_ROWS;
++	int radius = 10*s;
++
++	int selected = dir->selected;
++	int page = selected / TILE_PER_PAGE;
++	int pages = (total + TILE_PER_PAGE - 1) / TILE_PER_PAGE;
++	int first = page * TILE_PER_PAGE;
++
++	// title + page counter
++	char title[64];
++	SDL_Surface* t = TTF_RenderUTF8_Blended(font.large, "Main Menu", COLOR_WHITE);
++	if (t) { SDL_BlitSurface(t, NULL, screen, &(SDL_Rect){margin, 10*s}); SDL_FreeSurface(t); }
++	if (pages>0) {
++		snprintf(title, sizeof(title), "%d / %d", selected+1, total);
++		SDL_Surface* c = TTF_RenderUTF8_Blended(font.small, title, (SDL_Color){0xB8,0xBC,0xE0});
++		if (c) { SDL_BlitSurface(c, NULL, screen, &(SDL_Rect){W/2 - c->w/2 + 30*s, 14*s}); SDL_FreeSurface(c); }
++	}
++
++	for (int k=0; k<TILE_PER_PAGE; k++) {
++		int i = first + k;
++		if (i>=total) break;
++		Entry* e = dir->entries->items[i];
++		int col = k % TILE_COLS, row = k / TILE_COLS;
++		int x = margin + col*(cell_w+gap);
++		int y = top_y + row*(cell_h+gap);
++		int w = cell_w, h = cell_h;
++		int sel = (i==selected);
++		int cr, cg, cb, dark;
++		Tile_color(e, &cr, &cg, &cb, &dark);
++		if (sel) {
++			// white outline, tile slightly larger
++			int o = 3*s;
++			Tile_fillRound(screen, x-o-s, y-o-s, w+(o+s)*2, h+(o+s)*2, radius+o, Tile_pack(screen, 255,255,255));
++			Tile_fillRound(screen, x-s, y-s, w+s*2, h+s*2, radius+s, Tile_pack(screen, cr,cg,cb));
++		} else {
++			// dim non-selected tiles a little so the selected one pops
++			Tile_fillRound(screen, x, y, w, h, radius, Tile_pack(screen, cr*85/100, cg*85/100, cb*85/100));
++		}
++		SDL_Color tc = dark ? (SDL_Color){0x0B,0x10,0x20} : (SDL_Color){0xFF,0xFF,0xFF};
++
++		char* name = e->name;
++		trimSortingMeta(&name);
++		char abbr[16];
++		Tile_abbrev(name, abbr, sizeof(abbr));
++		SDL_Surface* big = TTF_RenderUTF8_Blended(tile_big_font, abbr, tc);
++		if (big) { SDL_BlitSurface(big, NULL, screen, &(SDL_Rect){x+9*s, y+8*s}); SDL_FreeSurface(big); }
++
++		char shown[256];
++		GFX_truncateText(font.medium, name, shown, w-14*s, 0);
++		SDL_Surface* nm = TTF_RenderUTF8_Blended(font.medium, shown, tc);
++		if (nm) { SDL_BlitSurface(nm, NULL, screen, &(SDL_Rect){x+9*s, y+h-nm->h-8*s}); SDL_FreeSurface(nm); }
++	}
++
++	// page dots
++	if (pages>1) {
++		int dw = 8*s, dh = 4*s, dg = 5*s;
++		int active_w = 14*s;
++		int total_w = (pages-1)*(dw+dg) + active_w;
++		int dx = W/2 - total_w/2;
++		int dy = top_y + cell_h*TILE_ROWS + gap*(TILE_ROWS-1) + 10*s;
++		for (int p=0; p<pages; p++) {
++			int ww = (p==page) ? active_w : dw;
++			Tile_fillRound(screen, dx, dy, ww, dh, dh/2, (p==page) ? Tile_pack(screen,255,255,255) : Tile_pack(screen,0x5B,0x60,0x94));
++			dx += ww + dg;
++		}
++	}
++}
++
+ int main (int argc, char *argv[]) {
+ 	selected_modifier = 0;	
+ 	if (autoResume()) return 0; // nothing to do	
+@@ -1825,7 +2015,22 @@ int main (int argc, char *argv[]) {
+ 				if (!HAS_POWER_BUTTON && !simple_mode) PWR_enableSleep();
+ 			}
+ 			else if (total>0) {
+-				if (PAD_justPressed(BTN_UP) || PAD_justRepeated(BTN_UP)) {
++				int tile_mode = (stack->count==1 && !fancy_mode);
++				if (tile_mode) {
++					int step = 0;
++					if (PAD_justPressed(BTN_LEFT) || PAD_justRepeated(BTN_LEFT)) step = -1;
++					else if (PAD_justPressed(BTN_RIGHT) || PAD_justRepeated(BTN_RIGHT)) step = 1;
++					else if (PAD_justPressed(BTN_UP) || PAD_justRepeated(BTN_UP)) step = -TILE_COLS;
++					else if (PAD_justPressed(BTN_DOWN) || PAD_justRepeated(BTN_DOWN)) step = TILE_COLS;
++					if (step) {
++						itemnotchanged = 0;
++						int n = selected + step;
++						if (n<0) n = (step==-1) ? total-1 : selected;
++						else if (n>=total) n = (step==1) ? 0 : selected;
++						selected = n;
++					}
++				}
++				else if (PAD_justPressed(BTN_UP) || PAD_justRepeated(BTN_UP)) {
+ 					itemnotchanged = 0;
+ 					if (selected==0 && !PAD_justPressed(BTN_UP)) {
+ 						// stop at top
+@@ -1910,7 +2115,8 @@ int main (int argc, char *argv[]) {
+ 					}
+ 					myentry = NULL;
+ 				}
+-				if (PAD_justRepeated(page_seek_minus) || PAD_justPressed(page_seek_minus)) {
++				if (tile_mode) {}
++				else if (PAD_justRepeated(page_seek_minus) || PAD_justPressed(page_seek_minus)) {
+ 					itemnotchanged = 0;
+ 					selected -= ( MAIN_ROW_COUNT + fancy_mode );
+ 					if (selected<0) {
+@@ -2145,7 +2351,10 @@ int main (int argc, char *argv[]) {
+ 			}
+ 			else {
+ 				// list
+-				if (total>0) {
++				if (total>0 && stack->count==1 && !fancy_mode) {
++					Tile_draw(screen, top, total);
++				}
++				else if (total>0) {
+ 					int selected_row = top->selected - top->start;
+ 						/*  start entry for boxart and save state preview window*/
+ 					if (fancy_mode) {  //only when fancy_mode is active
+diff --git a/workspace/m21/platform/platform.c b/workspace/m21/platform/platform.c
+index ab95383..65ff67f 100644
+--- a/workspace/m21/platform/platform.c
++++ b/workspace/m21/platform/platform.c
+@@ -1018,9 +1018,17 @@ SDL_Surface* PLAT_initVideo(void) {
+ 	return vid.screen;
+ }
+ 
++// The colorbar test pattern covers the transitions between programs.
++// It is OFF by default; create an empty file  .userdata/shared/enable-colorbar  to bring it back.
++static int PLAT_colorbarAllowed(void) {
++	static int allowed = -1;
++	if (allowed<0) allowed = access(SHARED_USERDATA_PATH "/enable-colorbar", F_OK)==0;
++	return allowed;
++}
++
+ void PLAT_quitVideo(void) {
+ 	//system("cat /sys/class/disp/disp/attr/sys >> /mnt/SDCARD/dispsys.txt");
+-	system("echo 1 > /sys/class/disp/disp/attr/colorbar");
++	if (PLAT_colorbarAllowed()) system("echo 1 > /sys/class/disp/disp/attr/colorbar");
+ 	PLAT_clearAll();
+ 	if (vid.ionmmapfailed!=0){
+ 		if (vid.fbmmap && vid.fbmmap != MAP_FAILED) { munmap(vid.fbmmap, vid.offset*2);}
